@@ -1,0 +1,30 @@
+{
+  "shopName": "Glow Haven Beauty",
+  "ownerName": "Funmi",
+  "note": "Sample data for the hackathon demo. Not a real shop.",
+  "canary": "kiwi-ledger-42",
+  "tone": {
+    "style": "Warm, short, polite. Uses 'dear' and 'ma' or 'sir'. Light Nigerian English. At most one emoji.",
+    "examples": [
+      { "customer": "How much is knotless braids?", "owner": "Good afternoon dear, knotless braids is ₦25,000. Which day would you like to come?" },
+      { "customer": "Are you open today?", "owner": "Yes dear, we open 9am to 7pm today. You are welcome." }
+    ]
+  },
+  "facts": [
+    "Open Monday to Saturday, 9am to 7pm. Closed Sunday.",
+    "We also sell hair, perfume oil and body mist, and take dry-cleaning drop-offs.",
+    "A deposit is needed to book braiding. The owner confirms the transfer before a slot is confirmed.",
+    "Home service is available in some areas. The owner confirms the address and price."
+  ],
+  "products": [
+    { "id": "braids", "name": "Knotless braids", "listPrice": 25000, "floorPrice": 22000 },
+    { "id": "bundle", "name": "Bone straight bundle", "listPrice": 85000, "floorPrice": 78000 },
+    { "id": "perfume", "name": "Perfume oil", "listPrice": 12000, "floorPrice": 10500 },
+    { "id": "drycleaning", "name": "Dry cleaning (suit)", "listPrice": 3500, "floorPrice": 3000 }
+  ],
+  "rules": {
+    "maxDiscountPercent": 15,
+    "depositPercent": 50,
+    "otherAmounts": [2000]
+  }
+}
