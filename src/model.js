@@ -3,8 +3,10 @@
 // No packages needed: this uses the web request built into Node 20 and later.
 
 export const BASETEN_BASE_URL = 'https://inference.baseten.co/v1';
-// The docs show meta-models/muse-spark-open. For the hackathon, use the -1026 build.
-export const MODEL = 'meta-models/muse-spark-open-1026';
+// Muse Spark Open, Meta's open-weight model. The name that works on a standard Baseten
+// workspace is meta-models/muse-spark-open. To use another build (for example a hackathon
+// one), set BASETEN_MODEL in your .env file. No code change needed.
+export const MODEL = process.env.BASETEN_MODEL || 'meta-models/muse-spark-open';
 
 /**
  * A tiny client with the same shape as the OpenAI one: client.chat.completions.create(body).
