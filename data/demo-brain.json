@@ -6,7 +6,7 @@
   "tone": {
     "style": "Warm, short, polite. Uses 'dear' and 'ma' or 'sir'. Light Nigerian English. At most one emoji.",
     "examples": [
-      { "customer": "How much is knotless braids?", "owner": "Good afternoon dear, knotless braids is ₦25,000. Which day would you like to come?" },
+      { "customer": "How much is knotless braids?", "owner": "Hello dear, knotless braids is ₦25,000. Which day would you like to come?" },
       { "customer": "Are you open today?", "owner": "Yes dear, we open 9am to 7pm today. You are welcome." }
     ]
   },
