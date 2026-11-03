@@ -78,7 +78,7 @@ const server = createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/approvals') {
       const key = url.searchParams.get('key') ?? '';
       if (!keyOk(key)) return send(res, 401, 'wrong key');
-      return send(res, 200, renderApprovals(inbox.list(), key), 'text/html; charset=utf-8');
+      return send(res, 200, renderApprovals(inbox.list(), key, brain), 'text/html; charset=utf-8');
     }
 
     // 4. The owner presses Approve or Reject
